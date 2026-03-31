@@ -1,4 +1,4 @@
-.counter {
+/* .counter {
   font-size: 16px;
   padding: 5px 10px;
   border-radius: 5px;
@@ -183,4 +183,206 @@
   }
 }
 
+ */
+/* 🎯 GLOBAL RESET + PREMIUM BASE */
+body {
+  background: linear-gradient(to bottom, #ffffff, #faf5ff, #ffffff);
+  color: #111827; /* gray-900 */
+  font-family: 'Inter', sans-serif;
+}
 
+/* 🔢 COUNTER (UPGRADED) */
+.counter {
+  font-size: 14px;
+  padding: 6px 12px;
+  border-radius: 8px;
+  color: #7c3aed;
+  background: rgba(124, 58, 237, 0.08);
+  border: 1px solid rgba(124, 58, 237, 0.2);
+  transition: all 0.3s ease;
+  margin-bottom: 24px;
+}
+
+.counter:hover {
+  border-color: #7c3aed;
+  box-shadow: 0 5px 20px rgba(124, 58, 237, 0.2);
+}
+
+.counter:focus-visible {
+  outline: 2px solid #7c3aed;
+  outline-offset: 2px;
+}
+
+/* 🚀 HERO SECTION */
+.hero {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Glow background */
+.hero::before {
+  content: "";
+  position: absolute;
+  width: 400px;
+  height: 400px;
+  background: rgba(168, 85, 247, 0.2);
+  filter: blur(120px);
+  border-radius: 50%;
+  z-index: 0;
+}
+
+/* LOGO STACK */
+.hero .base {
+  width: 180px;
+  position: relative;
+  z-index: 1;
+  transition: transform 0.4s ease;
+}
+
+.hero .framework,
+.hero .vite {
+  position: absolute;
+  inset-inline: 0;
+  margin: 0 auto;
+}
+
+/* Floating effect */
+.hero .framework {
+  z-index: 2;
+  top: 30px;
+  height: 28px;
+  transform: perspective(2000px) rotateZ(300deg) rotateX(44deg) rotateY(39deg) scale(1.4);
+}
+
+.hero .vite {
+  z-index: 1;
+  top: 100px;
+  height: 26px;
+  transform: perspective(2000px) rotateZ(300deg) rotateX(40deg) rotateY(39deg) scale(0.9);
+}
+
+/* ✨ CENTER CONTENT */
+#center {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+/* 📦 NEXT STEPS SECTION */
+#next-steps {
+  display: flex;
+  border-top: 1px solid #e5e7eb;
+}
+
+#next-steps > div {
+  flex: 1;
+  padding: 32px;
+}
+
+.icon {
+  margin-bottom: 16px;
+  width: 22px;
+  height: 22px;
+}
+
+/* 📚 DOCS SECTION */
+#docs {
+  border-right: 1px solid #e5e7eb;
+}
+
+/* 🔗 LINKS (UPGRADED BUTTON STYLE) */
+#next-steps ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  gap: 10px;
+  margin: 28px 0 0;
+}
+
+#next-steps a {
+  color: #111827;
+  font-size: 14px;
+  border-radius: 8px;
+  background: #ffffff;
+  display: flex;
+  padding: 8px 14px;
+  align-items: center;
+  gap: 8px;
+  text-decoration: none;
+  border: 1px solid #e5e7eb;
+  transition: all 0.3s ease;
+}
+
+#next-steps a:hover {
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+  transform: translateY(-2px);
+}
+
+/* 📱 RESPONSIVE */
+@media (max-width: 1024px) {
+
+  #center {
+    padding: 32px 20px 24px;
+    gap: 18px;
+  }
+
+  #next-steps {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  #docs {
+    border-right: none;
+    border-bottom: 1px solid #e5e7eb;
+  }
+
+  #next-steps ul {
+    margin-top: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  #next-steps li {
+    flex: 1 1 calc(50% - 8px);
+  }
+
+  #next-steps a {
+    width: 100%;
+    justify-content: center;
+  }
+}
+
+/* ✨ SPACER */
+#spacer {
+  height: 80px;
+  border-top: 1px solid #e5e7eb;
+}
+
+/* 🎯 TICKS */
+.ticks {
+  position: relative;
+  width: 100%;
+}
+
+.ticks::before,
+.ticks::after {
+  content: '';
+  position: absolute;
+  top: -4px;
+  border: 5px solid transparent;
+}
+
+.ticks::before {
+  left: 0;
+  border-left-color: #e5e7eb;
+}
+
+.ticks::after {
+  right: 0;
+  border-right-color: #e5e7eb;
+}
