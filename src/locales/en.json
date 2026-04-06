@@ -1,0 +1,33 @@
+
+{
+  "features": "Features",
+  "how_it_works": "How It Works",
+  "community": "Community",
+  "safety": "Safety",
+  "signup": "Sign up",
+  "login": "Login",
+  "profile": "Profile",
+  "settings": "Settings",
+  "logout": "Logout",
+
+  "hero_title": "Connecting",
+  "hero_dynamic_1": "LGBTQ Community",
+  "hero_dynamic_2": "Your Perfect Match",
+  "hero_subtitle": "Find your tribe, find your vibe",
+
+  "features_title": "Amazing Features",
+  "features_desc": "Discover tools designed to help you connect and build relationships",
+
+  "how_title": "How It Works",
+
+  "community_title": "A Community That Cares",
+  "community_desc": "Join a welcoming space where everyone can express themselves freely",
+
+  "safety_title": "Your Safety Matters",
+
+  "testimonial_title": "Testimonials",
+
+  "faq_title": "Frequently Asked Questions",
+
+  "download_title": "Join the HelloQ Community Today"
+}
